@@ -11,8 +11,13 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      title: 'Destinasi Wisata',
       debugShowCheckedModeBanner: false,
-      home: HomePage(),
+      theme: ThemeData(
+        useMaterial3: true,
+        primarySwatch: Colors.blue,
+      ),
+      home: const HomePage(),
     );
   }
 }

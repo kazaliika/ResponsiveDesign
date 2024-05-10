@@ -1,23 +1,26 @@
 import 'package:flutter/material.dart';
-import 'package:responsivedesign/responsive/hp_layout.dart';
-import 'package:responsivedesign/responsive/resp_layout.dart';
-import 'package:responsivedesign/responsive/web_layout.dart';
+import 'package:responsivedesign/responsive/resphplayout.dart';
+import 'package:responsivedesign/responsive/respweblayout.dart';
 
-class HomePage extends StatefulWidget {
+class HomePage extends StatelessWidget {
   const HomePage({super.key});
 
   @override
-  _HomePageState createState() => _HomePageState();
-}
-
-class _HomePageState extends State<HomePage> {
-  @override
   Widget build(BuildContext context) {
-    // final widthNow = MediaQuery.of(context).size.width;
     return Scaffold(
-      body: RespLayout(
-        hpLayout: MyHpLayout(),
-        webLayout: MyWebLayout(),
+      appBar: AppBar(
+        title: Text('Wisata Lubuk Linggau'),
+      ),
+      body: LayoutBuilder(
+        builder: (BuildContext context, BoxConstraints constraints) {
+          if (constraints.maxWidth < 600) {
+            return ResponsiveHpLayout();
+          } else if (constraints.maxWidth < 1200) {
+            return ResponsiveWebLayout(gridCount: 2);
+          } else {
+            return ResponsiveWebLayout(gridCount: 4);
+          }
+        },
       ),
     );
   }
