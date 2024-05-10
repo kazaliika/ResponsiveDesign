@@ -10,7 +10,7 @@ class ResponsiveWebLayout extends StatelessWidget {
   Widget build(BuildContext context) {
     return Center(
         child: Padding(
-      padding: const EdgeInsets.all(24.0),
+      padding: const EdgeInsets.all(20.0),
       child: GridView.count(
         crossAxisCount: gridCount,
         mainAxisSpacing: 16,
@@ -46,7 +46,7 @@ class ResponsiveWebLayout extends StatelessWidget {
                         Padding(
                           padding:
                               const EdgeInsets.only(left: 8.0, bottom: 8.0),
-                          child: Text(wisata.lokasi),
+                          child: Text(wisata.lokasi, textAlign: TextAlign.left),
                         )
                       ],
                     ),

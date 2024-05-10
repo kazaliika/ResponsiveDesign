@@ -55,6 +55,24 @@ class HasilHp extends StatelessWidget {
                           fontSize: 30.0,
                         ),
                       ),
+                      ListTile(
+                        leading: Icon(Icons.calendar_today, size: 18),
+                        title: Text(
+                          "Buka Setiap Hari",
+                        ),
+                      ),
+                      ListTile(
+                        leading: Icon(Icons.watch, size: 18),
+                        title: Text(
+                          "09:00-21:00",
+                        ),
+                      ),
+                      ListTile(
+                        leading: Icon(Icons.money, size: 18),
+                        title: Text(
+                          "Gratis",
+                        ),
+                      ),
                       const SizedBox(height: 8),
                       Text(
                         wisata.deskripsi,
@@ -116,13 +134,28 @@ class HasilWeb extends StatelessWidget {
                                   fontSize: 30.0,
                                 ),
                               ),
-                              Text(
-                                'Lokasi: ${wisata.lokasi}',
+                              ListTile(
+                                leading: Icon(Icons.calendar_today, size: 18),
+                                title: Text(
+                                  "Buka Setiap Hari",
+                                ),
+                              ),
+                              ListTile(
+                                leading: Icon(Icons.watch, size: 18),
+                                title: Text(
+                                  "09:00-21:00",
+                                ),
+                              ),
+                              ListTile(
+                                leading: Icon(Icons.money, size: 18),
+                                title: Text(
+                                  "Gratis",
+                                ),
                               ),
                               const SizedBox(height: 8.0),
                               Container(
                                 padding:
-                                    const EdgeInsets.symmetric(vertical: 16.0),
+                                    const EdgeInsets.symmetric(vertical: 8.0),
                                 child: Text(
                                   wisata.deskripsi,
                                   textAlign: TextAlign.justify,
