@@ -9,7 +9,11 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Wisata Lubuk Linggau'),
+        title: Text(
+          'Wisata Lubuk Linggau',
+          style: TextStyle(color: Color(0xFFEFF396)),
+        ),
+        backgroundColor: Color(0xFF211C6A),
       ),
       body: LayoutBuilder(
         builder: (BuildContext context, BoxConstraints constraints) {

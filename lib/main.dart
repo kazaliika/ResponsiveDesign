@@ -13,10 +13,6 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Destinasi Wisata',
       debugShowCheckedModeBanner: false,
-      theme: ThemeData(
-        useMaterial3: true,
-        primarySwatch: Colors.blue,
-      ),
       home: const HomePage(),
     );
   }

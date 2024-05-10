@@ -10,7 +10,11 @@ class HasilLayout extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text("Hasil Wisata"),
+        title: const Text(
+          "Hasil Wisata",
+          style: TextStyle(color: Color(0xFFEFF396)),
+        ),
+        backgroundColor: Color(0xFF211C6A),
       ),
       body: LayoutBuilder(
         builder: (BuildContext context, BoxConstraints constraints) {
