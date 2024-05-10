@@ -9,7 +9,7 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(
+        title: const Text(
           'Wisata Lubuk Linggau',
           style: TextStyle(color: Color(0xFFEFF396)),
         ),
