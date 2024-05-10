@@ -1,6 +1,6 @@
 # responsivedesign
 
-A new Flutter project.
+Mini Challenge MIKTI
 
 ## Getting Started
 
